@@ -65,13 +65,9 @@ body {
 	margin-left: 0.5em;
 }
 
-tt {
-    background: #ffffdd;
-}
-
 pre, tt {
-	font-size: 90%;
-	font-family: monaco, monospace;
+	font-size: 120%;
+	font-family: monospace;
 }
 
 a, a > tt {
@@ -133,7 +129,6 @@ em {
 strong {
 	font-weight: bold;
 }
-
 
 h1, h2, h3 {
 	color: #527bbd;
