@@ -211,7 +211,6 @@ strong {
 }
 
 h1, h2, h3 {
-	color: #527bbd;
 	font-weight: 700;
 	margin-top: 0.7em;
 	margin-bottom: 0.5em;
@@ -224,16 +223,19 @@ h1, h2, h3 {
 h1 {
 	font-size: 24px;
 	padding-bottom: 0.3em;
+	color: #424141;
 }
 
 h2 {
-	padding-top: 0.8em;
 	font-size: 20px;
+	padding-top: 0.8em;
+	color: #527bbd;
 }
 
 h3 {
 	font-size: 18px;
 	border-bottom: none;
+	color: #424141;
 }
 
 h2 + h3 {
