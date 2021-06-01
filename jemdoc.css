@@ -448,9 +448,11 @@ tr.heading {
 }
 
 img {
-    border: none;
+    border-radius: 1em;
 }
-
+#potrait{
+	border-radius: 0.5em;
+}
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
