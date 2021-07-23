@@ -223,19 +223,19 @@ h1, h2, h3 {
 h1 {
 	font-size: 24px;
 	padding-bottom: 0.3em;
-	color: #424141;
+	color: #313030;
 }
 
 h2 {
 	font-size: 20px;
 	padding-top: 0.8em;
-	color: #527bbd;
+	color:#313030;
 }
 
 h3 {
 	font-size: 18px;
 	border-bottom: none;
-	color: #424141;
+	color: #313030;
 }
 
 h2 + h3 {
