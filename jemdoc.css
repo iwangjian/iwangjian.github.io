@@ -300,7 +300,7 @@ dd > *:first-child {
 
 ul {
 	list-style-position: outside;
-	list-style-type: square;
+	list-style-type: disc;
 }
 
 p + ul, p + ol {
