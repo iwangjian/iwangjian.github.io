@@ -92,11 +92,10 @@ body {
 	padding-bottom: 8px;
 	margin: 0;
 }
-*/
 html {
-  background-color: #eeeeee; 
+  background-color: #eeeeee;
 }
-
+*/
 body { 
   font-family: 'Lato', Calibri, sans-serif;
   color: #000;
@@ -223,13 +222,13 @@ h1, h2, h3 {
 h1 {
 	font-size: 24px;
 	padding-bottom: 0.3em;
-	color: #313030;
+	color: #242424;
 }
 
 h2 {
 	font-size: 20px;
 	padding-top: 0.8em;
-	color:#313030;
+	color:#242424;
 }
 
 h3 {
@@ -448,10 +447,10 @@ tr.heading {
 }
 
 img {
-    border-radius: 1em;
+    border-radius: 0.1em;
 }
 #potrait{
-	border-radius: 0.5em;
+	border-radius: 0.2em;
 }
 table.imgtable, table.imgtable td {
     border: none;
