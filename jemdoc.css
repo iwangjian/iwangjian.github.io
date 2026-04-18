@@ -96,20 +96,95 @@ html {
   background-color: #eeeeee;
 }
 */
+html {
+  scroll-padding-top: 3.5rem;
+}
+
+/* Fixed top navigation (matches main column width) */
+#top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  font-family: 'Lato', Calibri, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#top-nav .top-nav-inner {
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.6rem;
+  row-gap: 0.45rem;
+}
+
+#top-nav a:link,
+#top-nav a:visited {
+  color: #3a3a3a;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#top-nav a:hover {
+  color: #141414;
+  border-bottom: 1px gray dotted;
+}
+
+#top-nav a.nav-current:link,
+#top-nav a.nav-current:visited {
+  color: #224b8d;
+  font-weight: 700;
+}
+
+#top-nav a.nav-current:hover {
+  color: #1a3d75;
+  border-bottom: none;
+}
+
 body { 
   font-family: 'Lato', Calibri, sans-serif;
   color: #000;
   background-color: #ffffff; 
   text-align:left; /* for IE */
-  margin-top: 30px; 
+  margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   padding-left:  50px;
   padding-right: 50px;
-  padding-top: 10px;
+  padding-top: 5rem;
   padding-bottom: 30px;
   max-width: 960px;
+}
+
+/* Short pages: keep footer (gray rule + copyright) at bottom of viewport */
+body.sticky-footer-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body.sticky-footer-page #layout-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0;
+}
+
+body.sticky-footer-page #layout-content div#footer {
+  margin-top: auto;
 }
 
 #layout-menu {
@@ -216,7 +291,7 @@ h1, h2, h3 {
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: none;
 }
 
 h1 {
@@ -468,6 +543,50 @@ table.imgtable, table.imgtable td {
     text-align: left;
 }
 
+/* Research experiences: text left, institution logo right */
+ul.experience-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0.5em 0 0 0;
+}
+
+li.experience-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 1.25rem;
+	margin-bottom: 1.75rem;
+	line-height: 1.45;
+}
+
+li.experience-item:last-child {
+	margin-bottom: 0;
+}
+
+.experience-text {
+	flex: 1;
+	min-width: 0;
+	font-size: 18px;
+}
+
+.experience-logo {
+	flex-shrink: 0;
+	width: 150px;
+	text-align: right;
+	padding-top: 0.1em;
+}
+
+.experience-logo img {
+	display: inline-block;
+	max-width: 140px;
+	max-height: 70px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	vertical-align: top;
+}
+
 /* Publication thumbnail styles */
 .publication-list {
     padding-left: 0 !important;
@@ -532,6 +651,50 @@ table.imgtable, table.imgtable td {
     line-height: 1.2;
     border-bottom: none;
     font-size: 18px;
+}
+
+/* Home: Research block highlight */
+.research-section {
+	background-color: #f0f4f8;
+	padding: 1rem 1.25rem 1.1rem;
+	margin-bottom: 0.5em;
+	border-radius: 2px;
+}
+
+.research-section h2 {
+	margin-top: 0.35em;
+	padding-top: 0.35em;
+}
+
+.research-section p:last-child {
+	margin-bottom: 0.3em;
+}
+
+/* News: expandable older items */
+.news-section .news-more.is-collapsed {
+	display: none;
+}
+
+.news-section .news-toggle-wrap {
+	margin-top: 0.15em;
+	margin-bottom: 0.8em;
+}
+
+.news-section .news-toggle {
+	font-family: 'Lato', Calibri, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #224b8d;
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.news-section .news-toggle:hover {
+	border-bottom: 1px gray dotted;
 }
 
 /* Lightbox modal styles */
