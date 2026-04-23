@@ -115,6 +115,15 @@ html {
   font-weight: 400;
 }
 
+/* Students page: slightly wider column so long student lines stay on one row (desktop) */
+body.page-students {
+  max-width: 1040px;
+}
+
+body.page-students #top-nav .top-nav-inner {
+  max-width: 1040px;
+}
+
 #top-nav .top-nav-inner {
   box-sizing: border-box;
   max-width: 960px;
